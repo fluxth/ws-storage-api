@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  padding: 30px;
+}
+
+textarea {
+  width: 600px;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.status {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  background-color: white;
+  width: 100%;
+}
+
+code {
+  font-size: 0.7rem;
+}

@@ -7,9 +7,9 @@ COPY ./frontend .
 RUN yarn install --immutable --immutable-cache --check-cache
 RUN yarn build
 
+# Stage 2: Build backend
 FROM rust:1.62.0 AS rust-build
 
-# Stage 2: Build backend
 RUN rustup target add x86_64-unknown-linux-musl
 
 WORKDIR /usr/build/backend

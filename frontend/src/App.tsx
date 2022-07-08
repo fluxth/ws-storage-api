@@ -18,7 +18,8 @@ export const App: React.FC = () => {
   const ws = useRef<WebSocket | null>(null);
 
   useEffect(() => {
-    const uri = "ws://127.0.0.1:3030/user";
+    // const uri = `ws://127.0.0.1:3030/user`; // DEV
+    const uri = `ws://${location.host}/user`;
     ws.current = new WebSocket(uri);
 
     ws.current.onopen = () => {
